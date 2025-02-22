@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bot app</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Chat container -->
+    <div id="chat-container">
+      <div id="chat-header">
+        <span>Bot</span>
+        <button id="clear-chat">Clear Chats</button>
+      </div>
+      <div id="chat-box"></div>
+      <div id="input-container">
+        <input
+          type="file"
+          id="file-input"
+          accept="image/*"
+          style="display: none"
+        />
+        <button class="upload-btn" id="upload-button">
+          <i class="fas fa-camera"></i>
+        </button>
+        <input type="text" id="message-input" placeholder="Type a message..." />
+        <button class="send-btn" id="send-button">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
